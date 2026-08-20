@@ -7,21 +7,66 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const photoItems = [
-    new PhotoItem('./assets/images/photo_1.jpg', 'Photo 1'),
-    new PhotoItem('./assets/images/photo_2.jpg', 'Photo 2'),
-    new PhotoItem('./assets/images/photo_3.jpg', 'Photo 3'),
-    new PhotoItem('./assets/images/photo_4.jpg', 'Photo 4'),
-    new PhotoItem('./assets/images/photo_5.jpg', 'Photo 5'),
-    new PhotoItem('./assets/images/photo_6.jpg', 'Photo 6'),
-    new PhotoItem('./assets/images/photo_7.jpg', 'Photo 7'),
-    new PhotoItem('./assets/images/photo_8.jpg', 'Photo 8'),
-    new PhotoItem('./assets/images/photo_9.jpg', 'Photo 9'),
-    new PhotoItem('./assets/images/photo_10.jpg', 'Photo 10'),
-    new PhotoItem('./assets/images/photo_11.jpg', 'Photo 11'),
-    new PhotoItem('./assets/images/photo_12.jpg', 'Photo 12'),
-    new PhotoItem('./assets/images/photo_13.jpg', 'Photo 13'),
-    new PhotoItem('./assets/images/photo_14.jpg', 'Photo 14'),
-    new PhotoItem('./assets/images/photo_15.jpg', 'Photo 15'),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1ixIAkg3Vxya4-B_bYAaQIWjTdytlykud&sz=w720',
+      'Photo 1',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=135GQjEqHYslawM4B4Y-B2HJtVfeGyGXc&sz=w720',
+      'Photo 2',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1WFIjcjdFJLVyMv1CN8ofy_CyHFcH0nee&sz=w720',
+      'Photo 3',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1nH6po4Z-QcWa7DPV140VwtoT3AxcslXi&sz=w720',
+      'Photo 4',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1Up-Xw16wrKKGW2h8hSr33zdLZczTfDO7&sz=w720',
+      'Photo 5',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1-cGov8SNHZP_3he_gVnUvQGqug0iqmoN&sz=w720',
+      'Photo 6',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1NveKuFVfWtdI9lANY6nZl5oZLMiTLtn6&sz=w720',
+      'Photo 7',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1KH3gYSG-INiLuTFHlrPyMMIYA8sXOVQg&sz=w720',
+      'Photo 8',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1U201FbxBqUDD4zhJzN14UgzkPVzaw4hh&sz=w720',
+      'Photo 9',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1gKMaaQb-gp2e3Lti2CCLiKSHz8Ueizee&sz=w720',
+      'Photo 10',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1x_7IZkoEnWbVAhaIEErHKLtE2ZVQIEas&sz=w720',
+      'Photo 11',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=14viUxoWtM3hzYcQyNLT78dXduEknH92M&sz=w720',
+      'Photo 12',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=11L8UtuMsKskDYZDzSqdKDchdWOVnCtHD&sz=w720',
+      'Photo 13',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=16KJuE7R-nK6C3E6CBt0v2ehbktPnLQr_&sz=w720',
+      'Photo 14',
+    ),
+    new PhotoItem(
+      'https://drive.google.com/thumbnail?id=1i1BkHsKWcxjGN2T125h1g0jft0NQfVRI&sz=w720',
+      'Photo 15',
+    ),
   ];
 
   const photoItemTemplate = document.getElementById(
