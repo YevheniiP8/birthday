@@ -157,6 +157,98 @@ body {
   object-fit: cover;
 }
 
+@media (min-width: 768px) {
+  .intro-screen h1 {
+    font-size: 2rem;
+  }
+
+  .intro-screen .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .scene-container {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .scene-container .scene-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-screen h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro-screen .subtitle {
+    font-size: 1.5rem;
+    max-width: 600px;
+  }
+
+  .intro-screen .music-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .scene-container .scene-title {
+    font-size: 2.2rem;
+  }
+
+  .scene {
+    height: 60%;
+  }
+
+  .carousel {
+    width: 162px;
+    height: 288px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro-screen h1 {
+    font-size: 3rem;
+  }
+
+  .intro-screen .music-btn {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+  }
+
+  .scene-container .scene-title {
+    font-size: 2.6rem;
+  }
+
+  .scene {
+    height: 80%;
+  }
+
+  .carousel {
+    width: 216px;
+    height: 384px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .intro-screen h1 {
+    font-size: 4.5rem;
+  }
+
+  .scene-container .scene-title {
+    font-size: 3rem;
+  }
+
+  .scene {
+    height: 100%;
+  }
+
+  .carousel {
+    width: 270px;
+    height: 480px;
+  }
+}
+
 @keyframes heartBeat {
   0%,
   100% {
