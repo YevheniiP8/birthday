@@ -16,6 +16,39 @@ body {
   perspective: 1000px;
 }
 
+.orientation-warning {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1a1a; /* Цвет фона заглушки под стиль открытки */
+  color: #ffffff;
+  z-index: 99999; /* Поверх всех элементов и 3D-карусели */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Стили для анимации иконки поворота */
+.warning-content .phone-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  animation: rotatePhone 2s infinite ease-in-out;
+}
+
+.warning-content p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.warning-content .sub-text {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
 #sparkles-canvas {
   position: absolute;
   top: 0;
@@ -157,6 +190,18 @@ body {
   object-fit: cover;
 }
 
+/* Включаем заглушку только для мобильных в альбомной ориентации */
+@media screen and (orientation: landscape) and (max-height: 576px) {
+  .orientation-warning {
+    display: flex;
+  }
+
+  /* Отключаем прокрутку основного сайта на фоне */
+  body {
+    overflow: hidden;
+  }
+}
+
 @media (min-width: 768px) {
   .intro-screen h1 {
     font-size: 2rem;
@@ -246,6 +291,18 @@ body {
   .carousel {
     width: 270px;
     height: 480px;
+  }
+}
+
+@keyframes rotatePhone {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
